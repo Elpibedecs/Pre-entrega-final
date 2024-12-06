@@ -1,0 +1,97 @@
+.cards
+{
+    width: 100%;
+    background-color: #111;
+    padding: 70px;
+    margin-top: 150px;
+    box-sizing: border-box;
+}
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #111;
+
+    .card
+    {
+       position: relative;
+       background-color: #252525;
+       width: 280px;
+       margin:2rem;
+       border-radius: $border-size;
+       color: white;
+       place-content: center;
+       padding: 3rem 2rem;
+       isolation: isolate;
+       overflow: hidden;
+       text-align: center;
+       box-sizing: border-box;
+    
+       img
+       {
+          width: 30%;
+          height: 20%;
+          margin-bottom: 40px;
+       }
+
+       a
+       {
+           text-decoration: none;
+           color: white;
+       }
+       h2
+       {
+           margin-bottom: 20px;
+       }
+    }
+
+}
+
+.card::before,.card::after
+    {
+        content: '';
+        position: absolute;
+    }
+   
+.card::before
+    {
+        width: 200%;
+        height: 200%;
+        background-image: conic-gradient($colorprincipal 0deg, transparent 50deg, transparent 180deg, $colorprincipal 180deg, transparent 240deg);
+        inset: -50%;
+        z-index: -2;
+        animation: border 8s linear infinite;
+    }
+
+@keyframes border 
+{
+    to
+    {
+        transform: rotateZ(-360deg);
+    }
+    
+}
+
+.card::after
+{
+    background-color: #111;
+    inset: 0.25rem;
+    border-radius: calc($border-size - 0.25rem);
+    z-index: -1;
+    transition: all 0.35s linear;
+}
+
+.card:hover::before
+{
+    background-color: #252525;
+}
+
+.card:hover::before
+{
+    animation-play-state: paused;
+}

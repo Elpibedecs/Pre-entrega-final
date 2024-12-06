@@ -1,0 +1,19 @@
+#Redes
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:20%;
+    justify-content: right;
+    margin-top: 150px;
+    padding-right: 50px;
+    gap: 100px;
+    box-sizing: border-box;
+    background-color: #d3d3d3;
+    img
+    {
+        width: 5%;
+        height: 50%;
+        margin-top: 50px;
+    }
+}

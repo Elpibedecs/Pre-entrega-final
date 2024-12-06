@@ -1,0 +1,104 @@
+.comprar
+{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 200px;
+
+    .cajas
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 10px;
+
+        .caja
+        {
+            width: 25%;
+            background-color: #ffffff;
+            height: 50%;
+            overflow: hidden;
+            border-radius: 10px;
+            border: solid 1px $colorprincipal;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            img
+            {
+                width: 90%;
+                height: 300px;
+                margin-top: 10px;
+            }
+
+            p
+            {
+                color: #BABABA;
+                font-weight: bold;
+                font-size: 13px;
+                margin-top: 20px;
+            }
+
+            .precio
+            {
+                color: black;
+                font-size: 16px;
+            }
+
+            .botonB
+            {
+                background-color: $colorprincipal;
+                padding: 5px;
+                color: white;
+                text-decoration: none;
+                width: 80%;
+                font-size: 20px;
+                border-radius: 15px;
+                margin-top: 15px;
+            }
+
+            .botonA
+            {
+                border: solid 1px $colorprincipal;
+                color: $colorprincipal;
+                background-color: white;
+                margin-top: 20px;
+                
+            }
+        }
+    }
+
+    .Seleccion
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 20%;
+        align-items: center;
+        .boton
+        {
+            background-color: #111;
+            width: 50%;
+            height: 15%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            img
+            {
+                width: 90%;
+                height: 50%;
+
+
+            }
+        }
+        .boton:hover
+        {
+            background-color: #252525;
+        }
+    }
+}

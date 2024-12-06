@@ -1,0 +1,39 @@
+.desktop_info
+{
+    background-color: $colorprincipal;
+    width:60%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+    color: white;
+    display: flex;
+
+    .inf
+    {
+        margin-top: 120px;
+        margin-left: 100px;
+        width: 50%;
+
+        h2
+        {
+            font-size: 38px;
+            font-weight: normal;
+            letter-spacing: 4px;
+            margin-bottom: 17px;
+        }
+
+        p
+        {
+            font-size: 18px;
+            color: #ffffff;
+            line-height: 20px;
+        }
+    }
+
+    img
+    {
+        height: 80%;
+        align-self: center;
+    }
+
+}

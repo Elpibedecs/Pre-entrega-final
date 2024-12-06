@@ -1,0 +1,22 @@
+@import 'variables';
+@import 'desktop_info';
+@import 'comprar';
+@import 'fuente';
+@import 'navbar';
+@import 'footer';
+@import 'layout';
+@import 'partners';
+@import 'cards';
+@import'contacto';
+@import 'media';
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+body
+{
+    background-color: #EDEDED;
+}
